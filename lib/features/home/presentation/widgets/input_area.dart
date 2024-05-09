@@ -8,7 +8,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'search_inputs.dart';
 
 class InputArea extends StatefulWidget {
-  InputArea({super.key, required this.from});
+  const InputArea({super.key, required this.from});
   final String from;
 
   @override
@@ -42,7 +42,7 @@ class _InputAreaState extends State<InputArea> {
         children: [
           Container(
             decoration: BoxDecoration(
-              color: Color.fromRGBO(47, 48, 53, 1),
+              color: const Color.fromRGBO(47, 48, 53, 1),
               borderRadius: BorderRadius.circular(15),
             ),
           ),
@@ -51,14 +51,14 @@ class _InputAreaState extends State<InputArea> {
             height: 90.h,
             decoration: BoxDecoration(
               // добавить тень
-              color: Color.fromRGBO(62, 63, 67, 1),
+              color: const Color.fromRGBO(62, 63, 67, 1),
               borderRadius: BorderRadius.circular(15),
             ),
             child: Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 15),
-                  child: Icon(
+                  padding: EdgeInsets.symmetric(horizontal: 15.w),
+                  child: const Icon(
                     CustomIcons.search_1,
                     color: Color.fromRGBO(12, 12, 12, 0.9),
                     size: 16,
@@ -85,7 +85,7 @@ class _InputAreaState extends State<InputArea> {
                             saveToCache('from', fromController.text);
                             FocusScope.of(context).unfocus();
                           },
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                               border: InputBorder.none,
                               hintText: 'Откуда - Москва',
                               hintStyle: TextStyles.hintText),
@@ -98,17 +98,17 @@ class _InputAreaState extends State<InputArea> {
                     Container(
                         width: 232.w,
                         height: 35.h,
-                        padding: EdgeInsets.only(),
+                        padding: const EdgeInsets.only(),
                         child: TextField(
                           onTap: () {
-                            print('object');
                             showModalBottomSheet(
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(16)),
                                 isScrollControlled: true,
                                 showDragHandle: true,
                                 barrierColor: Colors.black,
-                                backgroundColor: Color.fromRGBO(36, 37, 41, 1),
+                                backgroundColor:
+                                    const Color.fromRGBO(36, 37, 41, 1),
                                 context: context,
                                 builder: (context) {
                                   final Size size = MediaQuery.of(context).size;
@@ -128,7 +128,7 @@ class _InputAreaState extends State<InputArea> {
                             FilteringTextInputFormatter.allow(
                                 RegExp("[а-яА-Я]")),
                           ],
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                               border: InputBorder.none,
                               hintText: 'Куда - Турция',
                               hintStyle: TextStyles.hintText),

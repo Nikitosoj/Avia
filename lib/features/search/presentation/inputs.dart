@@ -25,13 +25,13 @@ class Inputs extends StatelessWidget {
           right: size.width * 0.05,
           top: size.height * 0.05,
           bottom: 15),
-      child: Container(
+      child: SizedBox(
         height: 100,
         child: Container(
           width: size.width * 0.9,
           decoration: BoxDecoration(
             // добавить тень
-            color: Color.fromRGBO(62, 63, 67, 1),
+            color: const Color.fromRGBO(62, 63, 67, 1),
             borderRadius: BorderRadius.circular(15),
           ),
           child: Row(
@@ -42,7 +42,7 @@ class Inputs extends StatelessWidget {
                   onTap: () {
                     Navigator.pop(context);
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.arrow_back_sharp,
                     color: Colors.white,
                     size: 28,
@@ -54,11 +54,11 @@ class Inputs extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SizedBox(height: 15),
+                    const SizedBox(height: 15),
                     Row(
                       children: [
                         Expanded(
-                          child: Container(
+                          child: SizedBox(
                             height: 30.h,
                             child: TextField(
                               controller: fromController,
@@ -70,7 +70,7 @@ class Inputs extends StatelessWidget {
                                 FilteringTextInputFormatter.allow(
                                     RegExp("[а-яА-Я]")),
                               ],
-                              decoration: InputDecoration(
+                              decoration: const InputDecoration(
                                   border: InputBorder.none,
                                   hintText: 'Откуда - Москва',
                                   hintStyle: TextStyles.hintText),
@@ -87,7 +87,7 @@ class Inputs extends StatelessWidget {
                           child: Container(
                               padding:
                                   const EdgeInsets.only(right: 22, bottom: 6),
-                              child: Icon(
+                              child: const Icon(
                                 CustomIcons.change,
                                 size: 14,
                                 color: Colors.white,
@@ -116,7 +116,7 @@ class Inputs extends StatelessWidget {
                                 FilteringTextInputFormatter.allow(
                                     RegExp("[а-яА-Я]")),
                               ],
-                              decoration: InputDecoration(
+                              decoration: const InputDecoration(
                                   contentPadding: EdgeInsets.only(bottom: 10),
                                   border: InputBorder.none,
                                   hintText: 'Куда - Турция',
@@ -131,7 +131,7 @@ class Inputs extends StatelessWidget {
                           child: Container(
                               padding:
                                   const EdgeInsets.only(top: 10, right: 16),
-                              child: Icon(
+                              child: const Icon(
                                 CustomIcons.close,
                                 color: Colors.white,
                               )),

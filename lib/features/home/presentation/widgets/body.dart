@@ -40,7 +40,7 @@ class _BodyState extends State<Body> {
                     alignment: Alignment.center,
                     child: SizedBox(
                       width: 172.w,
-                      child: Text(
+                      child: const Text(
                         'Поиск дешевых авиабилетов',
                         style: TextStyles.title1,
                         textAlign: TextAlign.center,
@@ -51,14 +51,14 @@ class _BodyState extends State<Body> {
                   InputArea(from: widget.from),
                   SizedBox(height: 32.h),
                   Container(
-                    padding: EdgeInsets.only(left: 15),
+                    padding: const EdgeInsets.only(left: 15),
                     alignment: Alignment.centerLeft,
-                    child: Text(
+                    child: const Text(
                       'Музыкально отлететь',
                       style: TextStyles.title2,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   SizedBox(
                       height: 215,
                       child: MusicScroll(

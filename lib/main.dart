@@ -10,10 +10,12 @@ Future<String?> getFromCache(String key) async {
 }
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<String?>(
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
             },
           );
         } else {
-          return MaterialApp(
+          return const MaterialApp(
             title: 'Avia Demo',
             debugShowCheckedModeBanner: false,
             home: Scaffold(

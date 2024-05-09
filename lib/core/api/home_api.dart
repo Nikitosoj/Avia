@@ -13,7 +13,7 @@ Future<MusicFlyModelList> fetchMusic(String url) async {
     final response = await http.get(Uri.parse(url));
     if (response.statusCode == 200) {
       final jsonData = json.decode(response.body);
-      print(response.body);
+
       if (jsonData != null) {
         return MusicFlyModelList.fromJson(jsonData);
       } else {
@@ -31,7 +31,6 @@ Future<List<DirectModel>> fetchDirect(String url) async {
   try {
     final response = await http.get(Uri.parse(url));
     if (response.statusCode == 200) {
-      print(response.body);
       final List<dynamic> jsonData =
           json.decode(response.body)['tickets_offers'];
 
@@ -50,7 +49,6 @@ Future<List<TicketModel>> fetchTickets(String url) async {
   try {
     final response = await http.get(Uri.parse(url));
     if (response.statusCode == 200) {
-      print(response.body);
       final List<dynamic> jsonData = json.decode(response.body)['tickets'];
       return jsonData
           .map((jsonItem) => TicketModel.fromJson(jsonItem))

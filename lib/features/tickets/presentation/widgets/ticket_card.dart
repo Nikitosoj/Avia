@@ -38,16 +38,16 @@ class _TicketCardState extends State<TicketCard> {
           Container(
             width: 328.w,
             height: 117.h,
-            margin: EdgeInsets.only(top: 12),
-            padding: EdgeInsets.all(16),
+            margin: const EdgeInsets.only(top: 12),
+            padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: Color.fromRGBO(29, 30, 32, 1),
+              color: const Color.fromRGBO(29, 30, 32, 1),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 Text(
                     '${NumberFormat.decimalPattern().format(widget.myItem.value).replaceAll(',', ' ')} ₽',
                     style: TextStyles.title2),
@@ -58,7 +58,7 @@ class _TicketCardState extends State<TicketCard> {
                     Container(
                       width: 24,
                       height: 24,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color.fromRGBO(255, 94, 94, 1),
                         shape: BoxShape.circle,
                       ),
@@ -132,10 +132,10 @@ class _TicketCardState extends State<TicketCard> {
                       EdgeInsets.symmetric(horizontal: 10.w, vertical: 4.h),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
-                      color: Color.fromRGBO(34, 97, 188, 1)),
+                      color: const Color.fromRGBO(34, 97, 188, 1)),
                   child: Text(
                     widget.myItem.badge,
-                    style: TextStyle(color: Colors.white, fontSize: 16),
+                    style: const TextStyle(color: Colors.white, fontSize: 16),
                   ),
                 )
               : Container(),

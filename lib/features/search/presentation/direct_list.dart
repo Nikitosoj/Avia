@@ -36,13 +36,13 @@ class _DirectListState extends State<DirectList> {
             width: 328.w,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
-              color: Color.fromRGBO(47, 48, 53, 1),
+              color: const Color.fromRGBO(47, 48, 53, 1),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 10, bottom: 15),
+                const Padding(
+                  padding: EdgeInsets.only(top: 10, bottom: 15),
                   child: Text('Прямые рейсы', style: TextStyles.title3),
                 ),
                 Column(
@@ -53,14 +53,14 @@ class _DirectListState extends State<DirectList> {
                       name: myItem[0].title,
                       timeRange: myItem[0].timeRange,
                       price: myItem[0].value,
-                      color: Color.fromRGBO(255, 94, 94, 1),
+                      color: const Color.fromRGBO(255, 94, 94, 1),
                     ),
                     TicketInfo(
                       size: size,
                       name: myItem[1].title,
                       timeRange: myItem[1].timeRange,
                       price: myItem[1].value,
-                      color: Color.fromRGBO(34, 97, 188, 1),
+                      color: const Color.fromRGBO(34, 97, 188, 1),
                     ),
                     TicketInfo(
                       size: size,
@@ -72,7 +72,7 @@ class _DirectListState extends State<DirectList> {
                     Center(
                         child: TextButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               'Показать все',
                               style: TextStyles.buttonBlue,
                             ))),
@@ -84,7 +84,7 @@ class _DirectListState extends State<DirectList> {
           );
         }
         if (state is DirectLoadingFailure) {
-          return Container(
+          return SizedBox(
             width: 100,
             height: 100,
             child: Center(
@@ -101,10 +101,10 @@ class _DirectListState extends State<DirectList> {
             ),
           );
         } else {
-          return Container(
+          return const SizedBox(
             height: 100,
             width: 100,
-            child: const Center(
+            child: Center(
               child: CircularProgressIndicator(),
             ),
           );

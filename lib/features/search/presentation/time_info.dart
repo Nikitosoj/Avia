@@ -18,10 +18,10 @@ class TimeInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 4),
+      padding: const EdgeInsets.symmetric(horizontal: 4),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(50),
-        color: Color.fromRGBO(47, 48, 53, 1),
+        color: const Color.fromRGBO(47, 48, 53, 1),
       ),
       child: Row(
         children: [

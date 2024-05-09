@@ -1,6 +1,7 @@
 import 'package:avia/core/assets/icons/custom_icons.dart';
 import 'package:avia/features/home/domain/music_fly_model.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/styles/text_styles.dart';
 
@@ -25,15 +26,15 @@ class FlightToMusic extends StatelessWidget {
           myItem.title,
           style: TextStyles.names,
         ),
-        SizedBox(height: 5),
+        SizedBox(height: 5.h),
         Text(
           myItem.town,
           style: TextStyles.artist,
         ),
-        SizedBox(height: 5),
+        SizedBox(height: 5.h),
         Row(
           children: [
-            Icon(
+            const Icon(
               CustomIcons.flyTickets,
               color: Color.fromRGBO(159, 159, 159, 1),
             ),

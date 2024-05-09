@@ -49,7 +49,7 @@ class TicketInfo extends StatelessWidget {
                           Text(
                               '${NumberFormat.decimalPattern().format(price).replaceAll(',', ' ')} ₽',
                               style: TextStyles.chipsBlue),
-                          Icon(
+                          const Icon(
                             CustomIcons.rightarrow,
                             size: 16,
                             color: Colors.blue,
@@ -59,7 +59,7 @@ class TicketInfo extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: 5.h),
-                  Container(
+                  SizedBox(
                     width: 257.w,
                     child: Text(
                       time,
@@ -76,7 +76,7 @@ class TicketInfo extends StatelessWidget {
         ),
         Container(
           height: 1,
-          color: Color.fromRGBO(62, 63, 67, 1),
+          color: const Color.fromRGBO(62, 63, 67, 1),
           width: 296.w,
         ),
         SizedBox(height: 15.h)

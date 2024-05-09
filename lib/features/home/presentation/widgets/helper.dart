@@ -2,6 +2,7 @@ import 'package:avia/core/assets/icons/custom_icons.dart';
 import 'package:avia/core/styles/text_styles.dart';
 import 'package:avia/features/placeholder_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../search/presentation/body_search.dart';
 
@@ -28,24 +29,24 @@ class Helper extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => PlaceholderScreen()),
+                          builder: (context) => const PlaceholderScreen()),
                     );
                   },
                   child: Container(
                       height: 48,
                       width: 48,
                       decoration: BoxDecoration(
-                          color: Color.fromRGBO(58, 99, 59, 1),
+                          color: const Color.fromRGBO(58, 99, 59, 1),
                           borderRadius: BorderRadius.circular(8)),
-                      child: Icon(
+                      child: const Icon(
                         CustomIcons.route,
                         color: Colors.white,
                       )),
                 ),
-                SizedBox(height: 5),
+                SizedBox(height: 5.h),
                 SizedBox(
-                  width: 70,
-                  child: Text(
+                  width: 70.w,
+                  child: const Text(
                     'Сложный маршрут',
                     textAlign: TextAlign.center,
                     style: TextStyles.text2white,
@@ -71,14 +72,14 @@ class Helper extends StatelessWidget {
                   height: 48,
                   width: 48,
                   decoration: BoxDecoration(
-                      color: Color.fromRGBO(34, 97, 188, 1),
+                      color: const Color.fromRGBO(34, 97, 188, 1),
                       borderRadius: BorderRadius.circular(8)),
-                  child: Icon(
+                  child: const Icon(
                     CustomIcons.ball,
                     color: Colors.white,
                   )),
-              SizedBox(height: 5),
-              SizedBox(
+              SizedBox(height: 5.h),
+              const SizedBox(
                 width: 85,
                 child: Text(
                   'Куда угодно',
@@ -91,7 +92,8 @@ class Helper extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => PlaceholderScreen()),
+                MaterialPageRoute(
+                    builder: (context) => const PlaceholderScreen()),
               );
             },
             child:
@@ -100,16 +102,16 @@ class Helper extends StatelessWidget {
                   height: 48,
                   width: 48,
                   decoration: BoxDecoration(
-                      color: Color.fromRGBO(0, 66, 125, 1),
+                      color: const Color.fromRGBO(0, 66, 125, 1),
                       borderRadius: BorderRadius.circular(8)),
-                  child: Icon(
+                  child: const Icon(
                     CustomIcons.calendar,
                     color: Colors.white,
                   )),
-              SizedBox(height: 5),
+              SizedBox(height: 5.h),
               SizedBox(
-                width: 85,
-                child: Text(
+                width: 85.w,
+                child: const Text(
                   'Выходные',
                   style: TextStyles.text2white,
                   textAlign: TextAlign.center,
@@ -121,7 +123,8 @@ class Helper extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => PlaceholderScreen()),
+                MaterialPageRoute(
+                    builder: (context) => const PlaceholderScreen()),
               );
             },
             child:
@@ -130,16 +133,16 @@ class Helper extends StatelessWidget {
                   height: 48,
                   width: 48,
                   decoration: BoxDecoration(
-                      color: Color.fromRGBO(255, 94, 94, 1),
+                      color: const Color.fromRGBO(255, 94, 94, 1),
                       borderRadius: BorderRadius.circular(8)),
-                  child: Icon(
+                  child: const Icon(
                     CustomIcons.fire,
                     color: Colors.white,
                   )),
-              SizedBox(height: 5),
+              SizedBox(height: 5.h),
               SizedBox(
-                width: 85,
-                child: Text(
+                width: 85.w,
+                child: const Text(
                   'Горячие билеты',
                   textAlign: TextAlign.center,
                   style: TextStyles.text2white,

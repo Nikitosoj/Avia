@@ -61,14 +61,14 @@ class _TicketsBodyState extends State<TicketsBody> {
                   margin: EdgeInsets.only(top: 16.h),
                   width: 328.w,
                   height: 56.h,
-                  color: Color.fromRGBO(36, 37, 41, 1),
+                  color: const Color.fromRGBO(36, 37, 41, 1),
                   child: Row(
                     children: [
                       IconButton(
                           onPressed: () {
                             Navigator.pop(context);
                           },
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.arrow_back_sharp,
                             size: 24,
                             color: Color.fromRGBO(34, 97, 188, 1),
@@ -113,20 +113,20 @@ class _TicketsBodyState extends State<TicketsBody> {
                         width: 185.w,
                         height: 37.h,
                         decoration: BoxDecoration(
-                            color: Color.fromRGBO(34, 97, 188, 1),
+                            color: const Color.fromRGBO(34, 97, 188, 1),
                             borderRadius: BorderRadius.circular(50)),
                         child: Row(children: [
                           SizedBox(width: 15.w),
-                          Icon(
+                          const Icon(
                             CustomIcons.filter,
                             size: 14,
                           ),
                           SizedBox(width: 5.w),
-                          Text('Фильт', style: TextStyles.chips),
+                          const Text('Фильт', style: TextStyles.chips),
                           SizedBox(width: 15.w),
-                          Icon(CustomIcons.graph, size: 14),
+                          const Icon(CustomIcons.graph, size: 14),
                           SizedBox(width: 5.w),
-                          Text('График цен', style: TextStyles.chips),
+                          const Text('График цен', style: TextStyles.chips),
                         ]),
                       ),
                     )

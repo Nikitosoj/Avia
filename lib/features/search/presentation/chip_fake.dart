@@ -19,7 +19,7 @@ class ChipFake extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(50),
-        color: Color.fromRGBO(47, 48, 53, 1),
+        color: const Color.fromRGBO(47, 48, 53, 1),
       ),
       child: Row(children: [
         SizedBox(width: 10.w),

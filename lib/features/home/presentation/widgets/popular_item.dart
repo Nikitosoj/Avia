@@ -10,7 +10,7 @@ class PopularItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 20, bottom: 5, left: 16, right: 16),
+      padding: const EdgeInsets.only(top: 20, bottom: 5, left: 16, right: 16),
       child: Row(
         children: [
           Image.asset(imgstring, height: 40, width: 40, fit: BoxFit.cover),
@@ -23,7 +23,7 @@ class PopularItem extends StatelessWidget {
                 style: TextStyles.names,
               ),
               SizedBox(height: 5.h),
-              Text('Популярное направление', style: TextStyles.text2gray),
+              const Text('Популярное направление', style: TextStyles.text2gray),
             ],
           )
         ],

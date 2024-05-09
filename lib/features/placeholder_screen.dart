@@ -7,10 +7,10 @@ class PlaceholderScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Заглушка'),
+        title: const Text('Заглушка'),
       ),
       backgroundColor: Colors.black,
-      body: Placeholder(),
+      body: const Placeholder(),
     );
   }
 }
